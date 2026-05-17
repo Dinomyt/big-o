@@ -280,7 +280,7 @@ export default function BigOTeacher() {
         <div style={{
           fontSize: 11, letterSpacing: "0.15em", textTransform: "uppercase",
           color: "#999", fontFamily: "monospace", marginBottom: 4
-        }}>SJCOE Interview Prep</div>
+        }}>Interview Prep</div>
         <h1 style={{ fontSize: 26, fontWeight: 700, color: "#1a1a1a", margin: "0 0 16px" }}>
           Big O Notation
         </h1>
