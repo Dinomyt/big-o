@@ -3,5 +3,5 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/big-o-study/'  // must match your repo name
+  base: '/big-o/'  // must match your repo name
 })
