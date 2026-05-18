@@ -210,7 +210,7 @@ const quizQuestions = [
 
 const tabs = ["Learn", "Cheat Sheet", "Practice"];
 
-export default function BigOTeacher() {
+export default function BigOTeacher({ onNavigate }) {
   const [tab, setTab] = useState("Learn");
   const [selectedComplexity, setSelectedComplexity] = useState(0);
   const [quizIndex, setQuizIndex] = useState(0);
@@ -277,10 +277,14 @@ export default function BigOTeacher() {
       boxSizing: "border-box"
     }}>
       <div style={{ maxWidth: 660, margin: "0 auto" }}>
-        <div style={{
+      <div 
+        onClick={onNavigate}
+        style={{
           fontSize: 11, letterSpacing: "0.15em", textTransform: "uppercase",
-          color: "#999", fontFamily: "monospace", marginBottom: 4
-        }}>Interview Prep</div>
+          color: "#999", fontFamily: "monospace", marginBottom: 4,
+          cursor: "pointer", textDecoration: "underline"
+        }}
+      >Interview Prep</div>
         <h1 style={{ fontSize: 26, fontWeight: 700, color: "#1a1a1a", margin: "0 0 16px" }}>
           Big O Notation
         </h1>
